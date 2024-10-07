@@ -4,6 +4,9 @@ from vincoli_manager import gestisci_vincoli
 
 # Configurazione della GUI di Streamlit
 st.title("Wedding Optimizer")
+# Aggiungi il nome sotto il titolo in formato piccolo
+st.markdown('<p style="font-size:12px; color:gray;">by Federico</p>', unsafe_allow_html=True)
+
 
 # Sezione per inserire il numero di tavoli e il numero massimo di posti per tavolo
 num_tavoli = st.number_input("Numero di tavoli", min_value=1, value=3, step=1)
